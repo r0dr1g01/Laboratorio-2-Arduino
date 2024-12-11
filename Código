@@ -1,0 +1,22 @@
+/*
+	Programador: r0dr1g0
+	Data: 11/12/2024
+	Obs: Segundo Laboratório de SDAC
+*/
+
+const int PINO_LED = 7;
+const int TEMPO_ESPERA_MS = 1000;
+
+
+//Inicializações
+void setup(void)	{
+  pinMode(PINO_LED, OUTPUT);
+}
+      
+//Programa Principal
+void loop (void)	{
+  digitalWrite(PINO_LED, HIGH);
+  delay(TEMPO_ESPERA_MS);
+  digitalWrite(PINO_LED, LOW);
+  delay(TEMPO_ESPERA_MS);
+}
