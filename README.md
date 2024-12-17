@@ -1,6 +1,7 @@
 # Laboratorio-2-Arduino
 Semáforo
-3 Leds com a função de um semaforo, a partir de uma placa Arduino UNO.
+
+3 Leds com a função de um semáforo, a partir de uma placa Arduino UNO.
 
 ![image](https://github.com/user-attachments/assets/ede6caa3-8b53-4705-8570-861b6ca8f6f3)
 
