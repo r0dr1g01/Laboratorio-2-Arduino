@@ -1,22 +1,85 @@
-/*
-	Programador: r0dr1g0
-	Data: 11/12/2024
-	Obs: Segundo Laboratório de SDAC
-*/
+// Constantes
+const int PINO_LED_RED = 7;
+const int PINO_LED_YELLOW = 12;
+const int PINO_LED_GREEN = 13;
+const int TEMPO_ESPERA_MS = 1500;
 
-const int PINO_LED = 7;
-const int TEMPO_ESPERA_MS = 1000;
+const int ESTADO_INICIALIZACAO_SEMAFORO = 0;
+const int ESTADO_TESTE_SEMAFORO = 1;
+const int ESTADO_ACENDER_VERMELHO = 2;
+const int ESTADO_ACENDER_AMARELO = 3;
+const int ESTADO_ACENDER_VERDE = 4;
 
+// Variáveis
+byte estadoAtual = ESTADO_INICIALIZACAO_SEMAFORO;
+byte contador = 0;
 
-//Inicializações
-void setup(void)	{
-  pinMode(PINO_LED, OUTPUT);
+// Inicializações
+void setup() {
+  pinMode(PINO_LED_RED, OUTPUT);
+  pinMode(PINO_LED_YELLOW, OUTPUT);
+  pinMode(PINO_LED_GREEN, OUTPUT);
 }
-      
-//Programa Principal
-void loop (void)	{
-  digitalWrite(PINO_LED, HIGH);
-  delay(TEMPO_ESPERA_MS);
-  digitalWrite(PINO_LED, LOW);
-  delay(TEMPO_ESPERA_MS);
+
+// Programa Principal
+void loop() {
+  switch (estadoAtual) {
+    case ESTADO_INICIALIZACAO_SEMAFORO: {
+      digitalWrite(PINO_LED_RED, HIGH);
+      digitalWrite(PINO_LED_YELLOW, HIGH);
+      digitalWrite(PINO_LED_GREEN, HIGH);
+      delay(2000);
+
+      digitalWrite(PINO_LED_RED, LOW);
+      digitalWrite(PINO_LED_YELLOW, LOW);
+      digitalWrite(PINO_LED_GREEN, LOW);
+      delay(500);
+
+      estadoAtual = ESTADO_TESTE_SEMAFORO;
+      break;
+    }
+
+    case ESTADO_TESTE_SEMAFORO: {
+      if (contador < 3) {
+        digitalWrite(PINO_LED_RED, HIGH);
+        digitalWrite(PINO_LED_YELLOW, HIGH);
+        digitalWrite(PINO_LED_GREEN, HIGH);
+        delay(2000);
+
+        digitalWrite(PINO_LED_RED, LOW);
+        digitalWrite(PINO_LED_YELLOW, LOW);
+        digitalWrite(PINO_LED_GREEN, LOW);
+        delay(500);
+
+        contador++;
+      } else {
+        estadoAtual = ESTADO_ACENDER_VERMELHO;
+      }
+      break;
+    }
+
+    case ESTADO_ACENDER_VERMELHO: {
+      digitalWrite(PINO_LED_RED, HIGH);
+      delay(5000);
+      digitalWrite(PINO_LED_RED, LOW);
+      estadoAtual = ESTADO_ACENDER_AMARELO;
+      break;
+    }
+
+    case ESTADO_ACENDER_AMARELO: {
+      digitalWrite(PINO_LED_YELLOW, HIGH);
+      delay(2000);
+      digitalWrite(PINO_LED_YELLOW, LOW);
+      estadoAtual = ESTADO_ACENDER_VERDE;
+      break;
+    }
+
+    case ESTADO_ACENDER_VERDE: {
+      digitalWrite(PINO_LED_GREEN, HIGH);
+      delay(7000);
+      digitalWrite(PINO_LED_GREEN, LOW);
+      estadoAtual = ESTADO_ACENDER_VERMELHO;
+      break;
+    }
+  }
 }
