@@ -8,4 +8,4 @@ Semáforo
 
 
 Para aceder basta clicar no link:
-[[[https://www.tinkercad.com/things/gMilGRZD7Wd-laboratorio-2?sharecode=nl5iYgedRglTrDo-SLZSi85mkhECLzeX6OgOJrSAnxk](https://www.tinkercad.com/things/kGEixmwBJ3y-frantic-fulffy)](https://www.tinkercad.com/things/kGEixmwBJ3y-semaforo)](https://www.tinkercad.com/things/kGEixmwBJ3y-semaforo)
+https://www.tinkercad.com/things/kGEixmwBJ3y-semaforo?sharecode=YrhTA40F0SmOKw9J2PJ_9E9tMTLB_BBHsU-VEqxkv5w
