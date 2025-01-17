@@ -15,8 +15,6 @@ Este código faz um semáforo funcionar usando um Arduino e três LEDs (vermelho
 
 ![image](https://github.com/user-attachments/assets/03e28a82-9871-4c5b-aa9a-74f37bc9ec5e)
 
+## 🔗 Simulação no Tinkercad
+[Acesse aqui a simulação do semáforo no Tinkercad](https://www.tinkercad.com/things/kGEixmwBJ3y-semaforo?sharecode=YrhTA40F0SmOKw9J2PJ_9E9tMTLB_BBHsU-VEqxkv5w)
 
-
-
-Para aceder basta clicar no link:
-https://www.tinkercad.com/things/kGEixmwBJ3y-semaforo?sharecode=YrhTA40F0SmOKw9J2PJ_9E9tMTLB_BBHsU-VEqxkv5w
