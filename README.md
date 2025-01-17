@@ -20,7 +20,7 @@ O esquema do circuito pode ser visualizado no seguinte arquivo:
 📄 [Semáforo.pdf](docs/Sem%C3%A1foro.pdf)  
 
 O código-fonte pode ser acessado aqui:  
-🔥 [Código](docs/Código)  
+</> [Código](docs/Código)  
  
 
 
