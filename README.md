@@ -5,7 +5,8 @@ Semáforo
 
 Este código faz um semáforo funcionar usando um Arduino e três LEDs (vermelho, amarelo e verde). Ele segue o mesmo padrão de um semáforo de rua: começa no vermelho, passa para o amarelo e depois para o verde, repetindo esse ciclo.
 
-![image](https://github.com/user-attachments/assets/ede6caa3-8b53-4705-8570-861b6ca8f6f3)
+![image](https://github.com/user-attachments/assets/03e28a82-9871-4c5b-aa9a-74f37bc9ec5e)
+
 
 
 
