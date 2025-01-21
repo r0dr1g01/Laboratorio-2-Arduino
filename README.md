@@ -16,9 +16,6 @@ Este código faz um semáforo funcionar usando um Arduino e três LEDs (vermelho
 ![image](https://github.com/user-attachments/assets/03e28a82-9871-4c5b-aa9a-74f37bc9ec5e)
 
 ## 📂 Docs  
-O esquema do circuito pode ser visualizado no seguinte arquivo:  
-📄 [Semáforo.pdf](docs/Sem%C3%A1foro.pdf)  
-
 O código-fonte pode ser acessado aqui:  
 </> [Código](docs/Código)  
  
