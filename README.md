@@ -15,6 +15,15 @@ Este código faz um semáforo funcionar usando um Arduino e três LEDs (vermelho
 
 ![image](https://github.com/user-attachments/assets/03e28a82-9871-4c5b-aa9a-74f37bc9ec5e)
 
+## 🔌 Esquema de Ligações  
+
+| Componente       | Pino no Arduino |
+|-----------------|----------------|
+| LED Vermelho    | 12 |
+| LED Amarelo     | 11 |
+| LED Verde       | 10 |
+
+
 ## 📂 Docs  
 O código-fonte pode ser acessado aqui:  
 </> [Código](docs/Código)  
